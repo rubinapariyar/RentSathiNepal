@@ -304,12 +304,6 @@ table tr:hover{
     align-items:flex-start;
   }
 
-}
-
-
-/* Responsive */
-@media(max-width:768px){
-
   .sidebar{
     width:80px;
   }
@@ -325,6 +319,8 @@ table tr:hover{
   .main{
     margin-left:80px;
   }
-
 }
+
+
+
 
