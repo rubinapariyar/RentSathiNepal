@@ -196,6 +196,117 @@ table td{
   border-color:#334155;
 }
 
+/* BookingTable Container */
+.table-container{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  overflow-x:auto;
+}
+
+/* Header */
+.table-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.table-header h2{
+  color:#0f172a;
+}
+
+.table-header button{
+  padding:12px 20px;
+  border:none;
+  background: var(--primary-color);
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.table-header button:hover{
+  background: var(--secondary-color);
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+table th{
+  background:#f8fafc;
+  color:#475569;
+  padding:15px;
+  text-align:left;
+}
+
+table td{
+  padding:15px;
+  border-bottom:1px solid #e2e8f0;
+}
+
+table tr:hover{
+  background:#f8fafc;
+}
+
+/* Status */
+.active{
+  background:#dcfce7;
+  color:#15803d;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.pending{
+  background:#fef3c7;
+  color:#b45309;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.returned{
+  background:#dbeafe;
+  color:#1d4ed8;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+/* Payment */
+.paid{
+  background:#dcfce7;
+  color:#15803d;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.unpaid{
+  background:#fee2e2;
+  color:#dc2626;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+  .table-header{
+    flex-direction:column;
+    gap:15px;
+    align-items:flex-start;
+  }
+
+}
+
+
 /* Responsive */
 @media(max-width:768px){
 
@@ -216,3 +327,4 @@ table td{
   }
 
 }
+
